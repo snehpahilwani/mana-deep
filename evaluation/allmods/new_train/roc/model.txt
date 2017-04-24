@@ -1,0 +1,36 @@
+###################################
+model_iter.h5
+0.2
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 119.0 98.0 102 17 3715 7828 
+
+0.5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 119.0 98.0 36 83 133 11410 
+
+0.7
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 119.0 98.0 9 110 1 11542 
+
+0.9
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 119.0 98.0 2 117 0 11543 
+
+###################################
+

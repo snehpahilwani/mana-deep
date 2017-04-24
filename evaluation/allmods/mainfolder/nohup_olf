@@ -1,0 +1,88 @@
+###################################
+best_model_dae.h5
+Using TensorFlow backend.
+0.0819672131148 0.00819672131148 0.016393442623 0
+Using TensorFlow backend.
+0.106557377049 0.0491803278689 0.016393442623 0
+###################################
+###################################
+model_best_1.h5
+Using TensorFlow backend.
+0.0245901639344 0.0 0.00819672131148 0
+Using TensorFlow backend.
+0.0655737704918 0.016393442623 0.016393442623 0
+###################################
+###################################
+model_best_2.h5
+Using TensorFlow backend.
+0.0655737704918 0.0 0.0 0
+Using TensorFlow backend.
+0.114754098361 0.016393442623 0.016393442623 0
+###################################
+###################################
+model_best_3.h5
+Using TensorFlow backend.
+0.0983606557377 0.016393442623 0.00819672131148 0
+Using TensorFlow backend.
+0.106557377049 0.0409836065574 0.00819672131148 0
+###################################
+###################################
+model_best_4.h5
+Using TensorFlow backend.
+0.16393442623 0.0327868852459 0.00819672131148 0
+Using TensorFlow backend.
+0.0819672131148 0.0409836065574 0.0 0
+###################################
+###################################
+model_best_dae.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+0.016393442623 0.0 0.0 0
+Using TensorFlow backend.
+0.188524590164 0.016393442623 0.016393442623 1
+###################################
+###################################
+model.h5
+Using TensorFlow backend.
+0.229508196721 0.0245901639344 0.016393442623 1
+Using TensorFlow backend.
+0.245901639344 0.0327868852459 0.016393442623 1
+###################################
+###################################
+model_nf1.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+0.0 0.0 0.0 0
+Using TensorFlow backend.
+0.0983606557377 0.0245901639344 0.00819672131148 0
+###################################
+###################################
+model_nf.h5
+Using TensorFlow backend.
+0.155737704918 0.016393442623 0.016393442623 0
+Using TensorFlow backend.
+0.172131147541 0.0245901639344 0.0245901639344 0
+###################################
+###################################
+model_n.h5
+Using TensorFlow backend.
+0.0655737704918 0.0245901639344 0.00819672131148 0
+Using TensorFlow backend.
+0.0983606557377 0.0245901639344 0.0 2
+###################################
+###################################
+now_dae1.h5
+Using TensorFlow backend.
+0.139344262295 0.0409836065574 0.016393442623 0
+Using TensorFlow backend.
+0.131147540984 0.0655737704918 0.0245901639344 0
+###################################
+###################################
+now_dae.h5
+Using TensorFlow backend.
+0.180327868852 0.0245901639344 0.016393442623 0
+Using TensorFlow backend.
+0.196721311475 0.0573770491803 0.0245901639344 0
+###################################

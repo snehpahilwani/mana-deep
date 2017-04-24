@@ -1,0 +1,441 @@
+###################################
+48_best_model.h5
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "FindBestMatch.py", line 60, in <module>
+    model.load_weights(sys.argv[3], by_name=True)
+  File "/home/arvind/.local/lib/python2.7/site-packages/keras/engine/topology.py", line 2706, in load_weights
+    self.load_weights_from_hdf5_group_by_name(f)
+  File "/home/arvind/.local/lib/python2.7/site-packages/keras/engine/topology.py", line 2843, in load_weights_from_hdf5_group_by_name
+    K.batch_set_value(weight_value_tuples)
+  File "/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py", line 1876, in batch_set_value
+    assign_op = x.assign(assign_placeholder)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/ops/variables.py", line 522, in assign
+    return state_ops.assign(self._variable, value, use_locking=use_locking)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/ops/gen_state_ops.py", line 47, in assign
+    use_locking=use_locking, name=name)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py", line 763, in apply_op
+    op_def=op_def)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 2329, in create_op
+    set_shapes_for_outputs(ret)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 1717, in set_shapes_for_outputs
+    shapes = shape_func(op)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 1667, in call_with_requiring
+    return call_cpp_shape_fn(op, require_shape_fn=True)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/framework/common_shapes.py", line 610, in call_cpp_shape_fn
+    debug_python_shape_fn, require_shape_fn)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/framework/common_shapes.py", line 676, in _call_cpp_shape_fn_impl
+    raise ValueError(err.message)
+ValueError: Dimension 3 in both shapes must be equal, but are 16 and 32 for 'Assign' (op: 'Assign') with input shapes: [3,3,1,16], [3,3,1,32].
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "FindBestMatch.py", line 60, in <module>
+    model.load_weights(sys.argv[3], by_name=True)
+  File "/home/arvind/.local/lib/python2.7/site-packages/keras/engine/topology.py", line 2706, in load_weights
+    self.load_weights_from_hdf5_group_by_name(f)
+  File "/home/arvind/.local/lib/python2.7/site-packages/keras/engine/topology.py", line 2843, in load_weights_from_hdf5_group_by_name
+    K.batch_set_value(weight_value_tuples)
+  File "/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py", line 1876, in batch_set_value
+    assign_op = x.assign(assign_placeholder)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/ops/variables.py", line 522, in assign
+    return state_ops.assign(self._variable, value, use_locking=use_locking)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/ops/gen_state_ops.py", line 47, in assign
+    use_locking=use_locking, name=name)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py", line 763, in apply_op
+    op_def=op_def)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 2329, in create_op
+    set_shapes_for_outputs(ret)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 1717, in set_shapes_for_outputs
+    shapes = shape_func(op)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 1667, in call_with_requiring
+    return call_cpp_shape_fn(op, require_shape_fn=True)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/framework/common_shapes.py", line 610, in call_cpp_shape_fn
+    debug_python_shape_fn, require_shape_fn)
+  File "/home/arvind/.local/lib/python2.7/site-packages/tensorflow/python/framework/common_shapes.py", line 676, in _call_cpp_shape_fn_impl
+    raise ValueError(err.message)
+ValueError: Dimension 3 in both shapes must be equal, but are 16 and 32 for 'Assign' (op: 'Assign') with input shapes: [3,3,1,16], [3,3,1,32].
+###################################
+###################################
+best_model_dae.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.262295081967 0.180327868852 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.270491803279 0.188524590164 0 
+
+###################################
+###################################
+best_model.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.0245901639344 0.016393442623 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.229508196721 0.180327868852 0 
+
+###################################
+###################################
+model12.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0 0.0 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0 0.0 0 
+
+###################################
+###################################
+model1.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0 0.0 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0 0.0 0 
+
+###################################
+###################################
+model212.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.22131147541 0.155737704918 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.295081967213 0.245901639344 0 
+
+###################################
+###################################
+model21.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0 0.0 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.237704918033 0.196721311475 0 
+
+###################################
+###################################
+model2.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0 0.0 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.254098360656 0.237704918033 0 
+
+###################################
+###################################
+model_best_1.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.0573770491803 0.0327868852459 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.196721311475 0.0983606557377 0 
+
+###################################
+###################################
+model_best_2.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.155737704918 0.0983606557377 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.229508196721 0.172131147541 0 
+
+###################################
+###################################
+model_best_3.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.262295081967 0.16393442623 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.188524590164 0.147540983607 0 
+
+###################################
+###################################
+model_best_dae.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.114754098361 0.0573770491803 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.229508196721 0.172131147541 0 
+
+###################################
+###################################
+model_best_final.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0 0.0 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.139344262295 0.0901639344262 0 
+
+###################################
+###################################
+model_best.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.204918032787 0.172131147541 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.327868852459 0.237704918033 0 
+
+###################################
+###################################
+model_dae_1.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0 0.0 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0819672131148 0.0409836065574 0 
+
+###################################
+###################################
+model_dae.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0 0.0 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0737704918033 0.0491803278689 0 
+
+###################################
+###################################
+model.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.0573770491803 0.0409836065574 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.22131147541 0.155737704918 0 
+
+###################################
+###################################
+model_old_base.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.204918032787 0.172131147541 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.327868852459 0.237704918033 0 
+
+###################################
+###################################
+modelold.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.204918032787 0.172131147541 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.327868852459 0.237704918033 0 
+
+###################################
+###################################
+model_right1.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0 0.0 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+/home/arvind/.local/lib/python2.7/site-packages/scipy/spatial/distance.py:296: RuntimeWarning: invalid value encountered in true_divide
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))
+
+!@#$ 0.0819672131148 0.0491803278689 0 
+
+###################################
+###################################
+model_right2.h5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.0409836065574 0.0245901639344 0 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.196721311475 0.122950819672 0 
+
+###################################

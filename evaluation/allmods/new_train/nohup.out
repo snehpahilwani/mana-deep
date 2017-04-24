@@ -1,0 +1,153 @@
+###################################
+model_iter.h5
+1
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.100840336134 0.0840336134454 0.0672268907563 7 --- 0.292605161667 seconds --- 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.100840336134 0.0840336134454 0.0672268907563 7 --- 0.290644884109 seconds --- 
+
+2
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.168067226891 0.134453781513 0.109243697479 11 --- 0.578227996826 seconds --- 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.159663865546 0.134453781513 0.109243697479 11 --- 0.591059923172 seconds --- 
+
+3
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.18487394958 0.18487394958 0.151260504202 11 --- 0.863566875458 seconds --- 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.18487394958 0.18487394958 0.151260504202 12 --- 0.873046875 seconds --- 
+
+4
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.285714285714 0.235294117647 0.210084033613 16 --- 1.15547394753 seconds --- 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.285714285714 0.235294117647 0.210084033613 16 --- 1.12272119522 seconds --- 
+
+5
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.319327731092 0.285714285714 0.252100840336 17 --- 1.54614496231 seconds --- 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.319327731092 0.285714285714 0.252100840336 17 --- 1.41424512863 seconds --- 
+
+6
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.336134453782 0.260504201681 0.252100840336 14 --- 1.72397589684 seconds --- 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.336134453782 0.268907563025 0.252100840336 14 --- 1.93456602097 seconds --- 
+
+7
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.36974789916 0.294117647059 0.285714285714 15 --- 1.82895207405 seconds --- 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.36974789916 0.294117647059 0.285714285714 15 --- 1.78898501396 seconds --- 
+
+8
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.36974789916 0.294117647059 0.285714285714 15 --- 1.82318305969 seconds --- 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.36974789916 0.294117647059 0.285714285714 15 --- 1.82472491264 seconds --- 
+
+9
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.36974789916 0.294117647059 0.285714285714 15 --- 1.84394598007 seconds --- 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.36974789916 0.294117647059 0.285714285714 15 --- 1.98781204224 seconds --- 
+
+10
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.36974789916 0.294117647059 0.285714285714 15 --- 1.77829504013 seconds --- 
+
+Using TensorFlow backend.
+/home/arvind/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1960: UserWarning: Expected no kwargs, you passed 1
+kwargs passed to function are ignored with Tensorflow backend
+  warnings.warn('\n'.join(msg))
+
+!@#$ 0.36974789916 0.294117647059 0.285714285714 15 --- 1.83686804771 seconds --- 
+
+###################################
