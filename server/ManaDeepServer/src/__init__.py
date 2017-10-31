@@ -7,7 +7,7 @@ from dominate.tags import base
 from flask import send_file
 
 from PIL import Image
-import cStringIO
+from io import StringIO, BytesIO
 import numpy as np
 
 
@@ -30,17 +30,18 @@ def predict():
         import model as m
         mod = m
     img_png_b64= request.form['img']
+    #print(img_png_b64)
     return mod.predict(img_png_b64.split(',')[1])
 
 
 @app.route('/img', methods=['POST','GET'])
 def getimg():
-    img_name= '/home/arvind/MyStuff/Desktop/Manatee_dataset/cleaned_data/train/' +  request.args.get('img')
+    img_name= 'D:/Manatee/SW_DU_Sketches/op/train/' +  request.args.get('img')
     pil_img = Image.open(img_name)
     pil_img = Image.fromarray((np.array(pil_img)).astype('uint32'))
     #pil_img.mode = 'I'
     #pil_img.point(lambda i:i*(1./256)).convert('L')
-    img_io = cStringIO.StringIO()
+    img_io = BytesIO()
     pil_img.save(img_io, 'PNG', quality=100)
     img_io.seek(0)
     return send_file(img_io, mimetype='image/png')
