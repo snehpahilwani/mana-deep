@@ -34,7 +34,7 @@ public class ManaDeepImg extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String fname = request.getParameter("file");
-		fname = "/home/arvind/MyStuff/Desktop/Manatee_dataset/cleaned_data/train/" + fname;
+		fname = "D:\Manatee\SW DU Sketches\op\train" + fname;
 	    response.setHeader("Content-disposition","attachment; filename="+request.getParameter("file")+".png");
 	    FileInputStream fis = new FileInputStream(new File(fname));  
 	    final BufferedImage tif = ImageIO.read(fis);

@@ -1,19 +1,19 @@
 
 <html>
 <link
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	rel="stylesheet" />
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+rel="stylesheet" />
 
 
 <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
 
 <script type="text/javascript"
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-	
-	
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+
+
 </script>
 
 <script type="text/javascript">
@@ -21,13 +21,20 @@
 
 	var x = "black", y = 2;
 
+	$(function() {
+		$('img').on('click', function() {
+			$('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+			$('#enlargeImageModal').modal('show');
+		});
+	});
+
 	function init() {
 		canvas = document.getElementById('can');
 		ctx = canvas.getContext("2d");
 		w = canvas.width;
 		h = canvas.height;
 		img = document.getElementById('template');
-        ctx.drawImage(img, 0, 0, 400, 400);
+		ctx.drawImage(img, 0, 0, 400, 400);
 		canvas.addEventListener("mousemove", function(e) {
 			findxy('move', e)
 		}, false);
@@ -67,7 +74,7 @@
 		if (m) {
 			ctx.clearRect(0, 0, w, h);
 			img = document.getElementById('template');
-	        ctx.drawImage(img, 0, 0, 400, 400);
+			ctx.drawImage(img, 0, 0, 400, 400);
 		}
 	}
 
@@ -78,9 +85,11 @@
 		//document.getElementById("canvasimg").style.display = "inline";
 		$.post('http://localhost:5000/predict', {img:dataURL}, function complete(data){
 			data = JSON.parse(data)
-			for (i=0;i<12;i++){
-				$('.img'+(i+1)).attr('src', 'http://localhost:5000/img?img='+ encodeURIComponent(data[i][1]))
+			for (i=0;i<15;i++){
+				$('.img'+(i+1)).attr('src', 'http://localhost:5000/img?img='+ encodeURIComponent(data[i][1]));
+				
 			}
+			$('.textdescription').text(''+encodeURIComponent(data[i][1])); //new to change the text of table row in the table
 		});
 	}
 
@@ -139,109 +148,149 @@ canvas {
 table img {
 	width: 100px;
 	height: 100px;
+	
 }
 
 table img:hover{
-    color: #424242; 
-  -webkit-transition: all .3s ease-in;
-  -moz-transition: all .3s ease-in;
-  -ms-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-  opacity: 1;
-  z-index:10;
-  transform: scale(2.0);
-  -ms-transform: scale(2.0); /* IE 9 */
-  -webkit-transform: scale(2.0); /* Safari and Chrome */
+	color: #424242; 
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+	opacity: 1;
+	z-index:10;
+	cursor: zoom-in;
+	transform: scale(2.0);
+	/*-ms-transform: scale(2.0);  IE 9 */	
+	/*webkit-transform: scale(2.0);  Safari and Chrome */
 
 }
 
-.scrolldiv{
+
+/*.scrolldiv{
 	height:90%;
 	overflow-y: hidden;
-}
+	}*/
 
-body{
-	overflow: hidden;
-}
+	/*body{
+		overflow: hidden;
+	}*/
 </style>
 <body onload="init()">
+
+	<div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+				</div>
+				<div class="modal-body">
+					<img src="" class="enlargeImageModalSource" style="width: 50%;">
+					<h2 class="textdescription" style="width:20%; display:inline-block;"></h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-					aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Mana Deep</a>
-			</div>
+				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span> <span
+				class="icon-bar"></span> <span class="icon-bar"></span> <span
+				class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Mana Deep</a>
+		</div>
 
-			<div class="collapse navbar-collapse"
-				id="bs-example-navbar-collapse-1"></div>
+		<div class="collapse navbar-collapse"
+		id="bs-example-navbar-collapse-1"></div>
 	</nav>
 
 	<div class='container'>
 		<div class='row'>
 			<div class='col-md-8'>
-				<h3 style='width:100%; padding-left:30%;'>Draw your query ! </h3>
+				<h3 style='width:100%; padding-left:35%;'>Draw your query! </h3>
 				<canvas id='can' width="400" height="400" style="border: 2px solid;margin-left:10%"></canvas>
 				<img id='template' class='template' src='bg1.jpg'/>
 				<div style='position:fixed;'>
-				
-				<h6>Eraser</h6>
-				<div
+
+					<h6>Eraser</h6>
+					<div
 					style="width: 15px; height: 15px; background: white; border: 2px solid;"
 					id="white" onclick="set_brush_props(this)"></div>
-				<h6>Pen</h6>
-				<div
+					<h6>Pen</h6>
+					<div
 					style="width: 15px; height: 15px; background: black; border: 2px solid;"
 					id="black" onclick="set_brush_props(this)"></div>
 				</div>
 				<br>	
 				<input type="button" value="Search" id="btn" size="30"
-					onclick="save()"
-					style="position:fixed; margin-top:450px; margin-left:480px;"
-					class="btn btn-success" /> 
+				onclick="save()"
+				style="position:fixed; margin-top:450px; margin-left:480px;"
+				class="btn btn-success" /> 
 				<input type="button" value="Clear"
-					id="clr" size="30" onclick="erase()"
-					style="position:fixed; margin-top:450px; margin-left:140px;"
-					class="btn btn-danger" />
+				id="clr" size="30" onclick="erase()"
+				style="position:fixed; margin-top:450px; margin-left:140px;"
+				class="btn btn-danger" />
 
 			</div>
 			<div class='col-md-4'>
-			<div class='scrolldiv'>
 				<h3>Top Matches</h3>
-				<table class="table table-striped table-bordered">
-					<tr>
-						<th><img src='bg.jpg' class='img1'/></th>
-						<th><img src='bg.jpg' class='img2'/></th>
-						<th><img src='bg.jpg' class='img3'/></th>
-					</tr>
-
-					<tr>
-						<th><img src='bg.jpg' class='img4'/></th>
-						<th><img src='bg.jpg' class='img5'/></th>
-						<th><img src='bg.jpg' class='img6'/></th>
-					</tr>
-
-					<tr>
-						<th><img src='bg.jpg' class='img7'/></th>
-						<th><img src='bg.jpg' class='img8'/></th>
-						<th><img src='bg.jpg' class='img9'/></th>
-					</tr>
+				<div class='scrolldiv' style='width:400px; height:500px;'>
 					
-					<tr>
-						<th><img src='bg.jpg' class='img10'/></th>
-						<th><img src='bg.jpg' class='img11'/></th>
-						<th><img src='bg.jpg' class='img12'/></th>
-					</tr>
-				</table>
-			</div>
+					<table class="table table-striped table-bordered">
+						<tr>
+							<th class='th1'><img src='bg.jpg' class='img1'/></th>
+							<th class='th2'><img src='bg.jpg' class='img2'/></th>
+							<th class='th3'><img src='bg.jpg' class='img3'/></th>
+						</tr>
+
+						<tr>
+							<th class='th4'><img src='bg.jpg' class='img4'/></th>
+							<th class='th5'><img src='bg.jpg' class='img5'/></th>
+							<th class='th6'><img src='bg.jpg' class='img6'/></th>
+						</tr>
+
+						<tr>
+							<th class='th7'><img src='bg.jpg' class='img7'/></th>
+							<th class='th8'><img src='bg.jpg' class='img8'/></th>
+							<th class='th9'><img src='bg.jpg' class='img9'/></th>
+						</tr>
+
+						<tr>
+							<th class='th10'><img src='bg.jpg' class='img10'/></th>
+							<th class='th11'><img src='bg.jpg' class='img11'/></th>
+							<th class='th12'><img src='bg.jpg' class='img12'/></th>
+						</tr>
+
+						<tr>
+							<th class='th13'><img src='bg.jpg' class='img13'/></th>
+							<th class='th14'><img src='bg.jpg' class='img14'/></th>
+							<th class='th15'><img src='bg.jpg' class='img15'/></th>
+						</tr>
+
+						<!--<tr>
+							<th class='th16'><img src='bg.jpg' class='img16'/></th>
+							<th class='th17'><img src='bg.jpg' class='img17'/></th>
+							<th class='th18'><img src='bg.jpg' class='img18'/></th>
+						</tr>
+
+						<tr>
+							<th class='th19'><img src='bg.jpg' class='img19'/></th>
+							<th class='th20'><img src='bg.jpg' class='img20'/></th>
+							<th class='th21'><img src='bg.jpg' class='img21'/></th>
+						</tr>-->
+					</table>
+
 			</div>
 		</div>
 	</div>
+</div>
+</div>
 </body>
 </html>
